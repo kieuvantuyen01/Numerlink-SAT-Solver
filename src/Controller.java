@@ -75,7 +75,7 @@ public class Controller {
         //}
         //long t2 = System.currentTimeMillis();
         if (problem.isSatisfiable()) {
-            System.out.println("SAT");
+            System.out.print("SAT");
             int[] model = problem.model();
             int[][] board = numberLink.getInputs();
             int countBreak = 0;
@@ -101,7 +101,7 @@ public class Controller {
                 }
             }
         }  else {
-            System.out.println("UNSAT");
+            System.out.print("UNSAT");
         }
         res.add((long) rows);
         res.add(clause);
